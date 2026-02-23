@@ -21,7 +21,7 @@ import javax.swing.JOptionPane;
 import java.awt.Color;
 
 class TresEnRaya extends JFrame implements ActionListener, ItemListener{
-    
+    //CAMBIOS GIT//
 	//Declaraciones
 	JButton c1, c2, c3, c4, c5, c6, c7, c8, c9, jbIniciarPartida, jbConfiguracion, jbFijarColor;
     JLabel jlGanador, jlTurno, jlR, jlG, jlB, jlNombre1, jlNombre2;
