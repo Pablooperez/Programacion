@@ -38,104 +38,109 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
         crearDisenyo();
     }
 	   
-	   
+	//Métodos
 
     private void crearDisenyo(){
-        //Frame
-    setLayout(null);
-       setTitle("Tres En Raya");
-    //Button   
-    c1 = new JButton();
-        c1.setBounds(130, 100, 80, 80);
-        add(c1);
-        c1.addActionListener(this);
-        
-    c2 = new JButton();
-        c2.setBounds(210, 100, 80, 80);
-        add(c2);
-        c2.addActionListener(this);
-    c3 = new JButton();
-        c3.setBounds(290, 100, 80, 80);
-        add(c3);
-        c3.addActionListener(this);
-    c4 = new JButton();
-        c4.setBounds(130, 180, 80, 80);
-        add(c4);
-        c4.addActionListener(this);  
-    c5 = new JButton();
-        c5.setBounds(210, 180, 80, 80);
-        add(c5);
-        c5.addActionListener(this);    
-    c6 = new JButton();
-        c6.setBounds(290, 180, 80, 80);
-        add(c6);
-        c6.addActionListener(this);   
-    c7 = new JButton();
-        c7.setBounds(130, 260, 80, 80);
-        add(c7);
-        c7.addActionListener(this);   
-    c8 = new JButton();
-        c8.setBounds(210, 260, 80, 80);
-        add(c8);
-        c8.addActionListener(this);  
-    c9 = new JButton();
-        c9.setBounds(290, 260, 80, 80);
-        add(c9);
-        c9.addActionListener(this);
-    jbIniciarPartida = new JButton("Iniciar Partida");
-        jbIniciarPartida.setBounds(340, 400, 120, 40);
-        add(jbIniciarPartida);
-        jbIniciarPartida.addActionListener(this);
-    jbConfiguracion = new JButton("Configuración");
-        jbConfiguracion.setBounds(40,400,120,40);
-        add(jbConfiguracion);
-        jbConfiguracion.addActionListener(this);
-    jbSalirConfiguracion = new JButton("Salir configuración");
-        jbSalirConfiguracion.setBounds(480,400,200,40);
-        jbSalirConfiguracion.addActionListener(this);
-    jlGanador = new JLabel("GANADOR");
-        jlGanador.setBounds(220, 25, 240, 80);
-        jlGanador.setVisible(false);
-    jlTurno = new JLabel("Turno Jugador 1");
-        jlTurno.setBounds(320, 15, 240, 80);
-        jlTurno.setVisible(true);
-        add(jlTurno);
-    jlR = new JLabel("R");
-        jlR.setBounds(480,05,60,60);
-    jlG = new JLabel("G");
-        jlG.setBounds(580,05,60,60);
-    jlB = new JLabel("B");
-        jlB.setBounds(680,05,60,60);
-    jcR = new JComboBox();
-        jcR.setBounds(460,45,60,20);
-        for(int f=0;f<256;f++) {
-        jcR.addItem(String.valueOf(f));
-        }
-    jcG = new JComboBox();
-        jcG.setBounds(560,45,60,20);
-        for(int f=0;f<256;f++) {
-        jcG.addItem(String.valueOf(f));
-        }
-    jcB = new JComboBox();
-        jcB.setBounds(660,45,60,20);
-        for(int f=0;f<256;f++) {
-        jcB.addItem(String.valueOf(f));
-        }
-    jbFijarColor = new JButton("Fijar Color");
-        jbFijarColor.setBounds(460,105,120,40);
-    jtNombre1 =  new JTextField();
-        jtNombre1.setBounds(600,200,120,30);
-    jtNombre2 = new JTextField();
-        jtNombre2.setBounds(600,300,120,30);
-    jlNombre1 = new JLabel("Nombre Jugador 1");
-        jlNombre1.setBounds(450,200, 120, 30);
-    jlNombre2 = new JLabel("Nombre Jugador 2");
-        jlNombre2.setBounds(450,300,120,30);
-        
 
+        //Frame
+        setLayout(null);
+        setTitle("Tres En Raya");
+
+        //Button   
+        c1 = new JButton();
+            c1.setBounds(130, 100, 80, 80);
+            add(c1);
+            c1.addActionListener(this);
+        c2 = new JButton();
+            c2.setBounds(210, 100, 80, 80);
+            add(c2);
+            c2.addActionListener(this);
+        c3 = new JButton();
+            c3.setBounds(290, 100, 80, 80);
+            add(c3);
+            c3.addActionListener(this);
+        c4 = new JButton();
+            c4.setBounds(130, 180, 80, 80);
+            add(c4);
+            c4.addActionListener(this);  
+        c5 = new JButton();
+            c5.setBounds(210, 180, 80, 80);
+            add(c5);
+            c5.addActionListener(this);    
+        c6 = new JButton();
+            c6.setBounds(290, 180, 80, 80);
+            add(c6);
+            c6.addActionListener(this);   
+        c7 = new JButton();
+            c7.setBounds(130, 260, 80, 80);
+            add(c7);
+            c7.addActionListener(this);   
+        c8 = new JButton();
+            c8.setBounds(210, 260, 80, 80);
+            add(c8);
+            c8.addActionListener(this);  
+        c9 = new JButton();
+            c9.setBounds(290, 260, 80, 80);
+            add(c9);
+            c9.addActionListener(this);
+        jbIniciarPartida = new JButton("Iniciar Partida");
+            jbIniciarPartida.setBounds(340, 400, 120, 40);
+            add(jbIniciarPartida);
+            jbIniciarPartida.addActionListener(this);
+        jbConfiguracion = new JButton("Configuración");
+            jbConfiguracion.setBounds(40,400,120,40);
+            add(jbConfiguracion);
+            jbConfiguracion.addActionListener(this);
+        jbSalirConfiguracion = new JButton("Salir configuración");
+            jbSalirConfiguracion.setBounds(480,400,200,40);
+            jbSalirConfiguracion.addActionListener(this);
+        jbFijarColor = new JButton("Fijar Color");
+            jbFijarColor.setBounds(460,105,120,40);
+
+        //Label
+        jlGanador = new JLabel("GANADOR");
+            jlGanador.setBounds(220, 25, 240, 80);
+            jlGanador.setVisible(false);
+        jlTurno = new JLabel("Turno Jugador 1");
+            jlTurno.setBounds(320, 15, 240, 80);
+            jlTurno.setVisible(true);
+            add(jlTurno);
+        jlR = new JLabel("R");
+            jlR.setBounds(480,05,60,60);
+        jlG = new JLabel("G");
+            jlG.setBounds(580,05,60,60);
+        jlB = new JLabel("B");
+            jlB.setBounds(680,05,60,60);
+        jlNombre1 = new JLabel("Nombre Jugador 1");
+            jlNombre1.setBounds(450,200, 120, 30);
+        jlNombre2 = new JLabel("Nombre Jugador 2");
+            jlNombre2.setBounds(450,300,120,30);
+
+        //Combo
+        jcR = new JComboBox();
+            jcR.setBounds(460,45,60,20);
+            for(int f=0;f<256;f++) {
+                jcR.addItem(String.valueOf(f));
+            }
+        jcG = new JComboBox();
+            jcG.setBounds(560,45,60,20);
+            for(int f=0;f<256;f++) {
+                jcG.addItem(String.valueOf(f));
+            }
+        jcB = new JComboBox();
+            jcB.setBounds(660,45,60,20);
+            for(int f=0;f<256;f++) {
+                jcB.addItem(String.valueOf(f));
+            }
+
+        //TextField
+        jtNombre1 =  new JTextField();
+            jtNombre1.setBounds(600,200,120,30);
+        jtNombre2 = new JTextField();
+            jtNombre2.setBounds(600,300,120,30);
+        
     }
 	   
-
     //Interfaces
 
     public void actionPerformed(ActionEvent e){
@@ -555,6 +560,8 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
 
     }
 
+    //Pantalla configuración
+
     private void configuracion(){
         iTurno=0;
         setSize(800,500);
@@ -616,6 +623,8 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
 
     }
 
+    //Turno
+
     public int aumentarTurno(){
         if (iTurno<=8) {
             iTurno++;
@@ -623,7 +632,9 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
         return iTurno;  
     
     }
-    	
+    
+    //Verificar ganador
+
     private void verificarGanador(){
        
 
@@ -814,6 +825,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
 
     }
 
+    //Activar/desactivar botones
     public void desactivarBotones(){
         
             c1.setEnabled(false);
@@ -841,8 +853,5 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             c9.setEnabled(true);
         
     }
-
-
-
 	
 }
