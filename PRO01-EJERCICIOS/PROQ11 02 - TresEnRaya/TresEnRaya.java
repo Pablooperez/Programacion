@@ -19,6 +19,7 @@ import javax.swing.JTextField;
 import java.awt.event.*;
 import javax.swing.JOptionPane;
 import java.awt.Color;
+import javax.swing.ImageIcon;
 
 class TresEnRaya extends JFrame implements ActionListener, ItemListener{
 
@@ -28,6 +29,8 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
     JLabel jlGanador, jlTurno, jlR, jlG, jlB, jlNombre1, jlNombre2;
     JComboBox jcR,jcG,jcB;
     JTextField jtNombre1,jtNombre2;
+    ImageIcon xIcon=new ImageIcon(".\\Imagenes\\"), yIcon=new ImageIcon(".\\Imagenes\\");
+
 	int iTurno=1;
     boolean bVictoria=false;
     
