@@ -177,39 +177,39 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             
     		if (e.getSource()==c1) {
     			c1.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c2) {
     			c2.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c3) {
     			c3.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c4) {
     			c4.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c5) {
     			c5.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c6) {
     			c6.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c7) {
     			c7.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c8) {
     			c8.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c9) {
     			c9.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
             
     	}
@@ -217,39 +217,39 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             
     		if (e.getSource()==c1) {
     			c1.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c2) {
     			c2.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c3) {
     			c3.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c4) {
     			c4.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c5) {
     			c5.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c6) {
     			c6.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c7) {
     			c7.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c8) {
     			c8.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c9) {
     			c9.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
             
     	}
@@ -257,39 +257,39 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             
     		if (e.getSource()==c1) {
     			c1.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c2) {
     			c2.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c3) {
     			c3.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c4) {
     			c4.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c5) {
     			c5.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c6) {
     			c6.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c7) {
     			c7.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c8) {
     			c8.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c9) {
     			c9.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
             
     	}
@@ -297,39 +297,39 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             
     		if (e.getSource()==c1) {
     			c1.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c2) {
     			c2.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c3) {
     			c3.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c4) {
     			c4.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c5) {
     			c5.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c6) {
     			c6.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c7) {
     			c7.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c8) {
     			c8.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c9) {
     			c9.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
             
     	}
@@ -337,39 +337,39 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             
     		if (e.getSource()==c1) {
     			c1.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c2) {
     			c2.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c3) {
     			c3.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c4) {
     			c4.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c5) {
     			c5.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c6) {
     			c6.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c7) {
     			c7.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c8) {
     			c8.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c9) {
     			c9.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
             
     	}
@@ -377,39 +377,39 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             
     		if (e.getSource()==c1) {
     			c1.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c2) {
     			c2.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c3) {
     			c3.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c4) {
     			c4.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c5) {
     			c5.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c6) {
     			c6.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c7) {
     			c7.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c8) {
     			c8.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c9) {
     			c9.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
             
     	}
@@ -417,39 +417,39 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             
     		if (e.getSource()==c1) {
     			c1.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c2) {
     			c2.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c3) {
     			c3.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c4) {
     			c4.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c5) {
     			c5.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c6) {
     			c6.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c7) {
     			c7.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c8) {
     			c8.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c9) {
     			c9.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
             
     	}
@@ -457,39 +457,39 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
            
     		if (e.getSource()==c1) {
     			c1.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c2) {
     			c2.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c3) {
     			c3.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c4) {
     			c4.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c5) {
     			c5.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c6) {
     			c6.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c7) {
     			c7.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c8) {
     			c8.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
     		if (e.getSource()==c9) {
     			c9.setText("O");
-                jlTurno.setText(jtNombre1.getText());
+                jlTurno.setText("Turno: " + jtNombre1.getText());
     		}
             
     	}
@@ -497,39 +497,39 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             
     		if (e.getSource()==c1) {
     			c1.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c2) {
     			c2.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c3) {
     			c3.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c4) {
     			c4.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c5) {
     			c5.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c6) {
     			c6.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c7) {
     			c7.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c8) {
     			c8.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
     		if (e.getSource()==c9) {
     			c9.setText("X");
-                jlTurno.setText(jtNombre2.getText());
+                jlTurno.setText("Turno: " + jtNombre2.getText());
     		}
             
     	} 
@@ -555,7 +555,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
         iTurno=0;
         jlGanador.setVisible(false);
         activarBotones();
-        jlTurno.setText(jtNombre1.getText());
+        jlTurno.setText("Turno: " + jtNombre1.getText());
         bVictoria=false;
 
     }
