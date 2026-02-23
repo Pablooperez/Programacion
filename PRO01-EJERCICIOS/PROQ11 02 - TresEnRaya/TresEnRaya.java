@@ -32,16 +32,20 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
     boolean bVictoria=false;
     
 
+    //Constructores
 
 	public TresEnRaya(){
+        crearDisenyo();
+    }
+	   
+	   
 
-	//Frame
-	setLayout(null);
-	setTitle("Tres En Raya");
-
-
-	//Button
-	c1 = new JButton();
+    private void crearDisenyo(){
+        //Frame
+    setLayout(null);
+       setTitle("Tres En Raya");
+    //Button   
+    c1 = new JButton();
         c1.setBounds(130, 100, 80, 80);
         add(c1);
         c1.addActionListener(this);
@@ -129,8 +133,8 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
         jlNombre2.setBounds(450,300,120,30);
         
 
-        
-    }    
+    }
+	   
 
     //Interfaces
 
@@ -591,8 +595,6 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
 
         add(jbSalirConfiguracion);
         jbSalirConfiguracion.setVisible(true);
-
-
 
     }
 
