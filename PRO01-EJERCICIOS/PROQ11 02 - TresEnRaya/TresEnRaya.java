@@ -21,9 +21,10 @@ import javax.swing.JOptionPane;
 import java.awt.Color;
 
 class TresEnRaya extends JFrame implements ActionListener, ItemListener{
-    //CAMBIOS GIT//
+
 	//Declaraciones
-	JButton c1, c2, c3, c4, c5, c6, c7, c8, c9, jbIniciarPartida, jbConfiguracion, jbFijarColor;
+
+	JButton c1, c2, c3, c4, c5, c6, c7, c8, c9, jbIniciarPartida, jbConfiguracion, jbFijarColor, jbSalirConfiguracion;
     JLabel jlGanador, jlTurno, jlR, jlG, jlB, jlNombre1, jlNombre2;
     JComboBox jcR,jcG,jcB;
     JTextField jtNombre1,jtNombre2;
@@ -85,6 +86,9 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
         jbConfiguracion.setBounds(40,400,120,40);
         add(jbConfiguracion);
         jbConfiguracion.addActionListener(this);
+    jbSalirConfiguracion = new JButton("Salir configuración");
+        jbSalirConfiguracion.setBounds(480,400,200,40);
+        jbSalirConfiguracion.addActionListener(this);
     jlGanador = new JLabel("GANADOR");
         jlGanador.setBounds(220, 25, 240, 80);
         jlGanador.setVisible(false);
@@ -156,10 +160,9 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
                 c8.setBackground(color1);
                 c9.setBackground(color1);
                 iTurno=0;
-        if (e.getSource()==jbConfiguracion) {
+             }   
+        if (e.getSource()==jbSalirConfiguracion) {
             salirConfiguracion();
-        }
-
             }
         if (iTurno==1) {
             
@@ -553,38 +556,62 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
         setSize(800,500);
         
         add(jlR);
-
+        jlR.setVisible(true);
         
         add(jlG);
-
+        jlG.setVisible(true);
         
         add(jlB);
-
+        jlB.setVisible(true);
         
         add(jcR);
-
+        jcR.setVisible(true);
         
         add(jcG);
-
+        jcG.setVisible(true);
         
         add(jcB);
-
+        jcB.setVisible(true);
         
         add(jbFijarColor);
         jbFijarColor.addActionListener(this);
+        jbFijarColor.setVisible(true);
 
         add(jtNombre1);
+        jtNombre1.setVisible(true);
 
         add(jtNombre2);
+        jtNombre2.setVisible(true);
 
         add(jlNombre1);
+        jlNombre1.setVisible(true);
 
         add(jlNombre2);
+        jlNombre2.setVisible(true);
+
+        add(jbSalirConfiguracion);
+        jbSalirConfiguracion.setVisible(true);
+
+
 
     }
 
     private void salirConfiguracion(){
         setSize(500,500);
+        iTurno=0;
+        jlR.setVisible(false);
+        jlG.setVisible(false);
+        jlB.setVisible(false);
+        jcR.setVisible(false);
+        jcG.setVisible(false);
+        jcB.setVisible(false);
+        jbFijarColor.setVisible(false);
+        jtNombre1.setVisible(false);
+        jtNombre2.setVisible(false);
+        jlNombre1.setVisible(false);
+        jlNombre2.setVisible(false);
+        jbSalirConfiguracion.setVisible(false);
+
     }
 
     public int aumentarTurno(){
