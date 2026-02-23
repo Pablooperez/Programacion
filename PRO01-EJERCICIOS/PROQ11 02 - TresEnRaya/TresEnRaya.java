@@ -20,7 +20,7 @@ import java.awt.event.*;
 import javax.swing.JOptionPane;
 import java.awt.Color;
 import javax.swing.ImageIcon;
-
+//qwerqwerqwer//
 class TresEnRaya extends JFrame implements ActionListener, ItemListener{
 
 	//Declaraciones
