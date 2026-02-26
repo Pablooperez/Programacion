@@ -25,14 +25,15 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
 
 	//Declaraciones
 
-	JButton c1, c2, c3, c4, c5, c6, c7, c8, c9, jbIniciarPartida, jbConfiguracion, jbFijarColor, jbSalirConfiguracion;
-    JLabel jlGanador, jlTurno, jlR, jlG, jlB, jlNombre1, jlNombre2;
+	JButton c1, c2, c3, c4, c5, c6, c7, c8, c9, jbIniciarPartida, jbConfiguracion, jbFijarColor, jbSalirConfiguracion, jbEstadisticas, jbResetearEstadisticas;
+    JLabel jlGanador, jlTurno, jlR, jlG, jlB, jlNombre1, jlNombre2, jlEstadisticas1, jlEstadisticas2, jlEstadisticasTotales;
     JComboBox jcR,jcG,jcB;
     JTextField jtNombre1,jtNombre2;
     ImageIcon xIcon=new ImageIcon(".\\Imagenes\\"), yIcon=new ImageIcon(".\\Imagenes\\");
 
-	int iTurno=1;
-    boolean bVictoria=false;
+	int iTurno=1, iPartidasTotales, iPartidasEmpatadas;
+    boolean bVictoria;
+    int iPartidasGanadasJ1=0, iPartidasGanadasJ2=0;
     
 
     //Constructores
@@ -99,6 +100,22 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             jbSalirConfiguracion.addActionListener(this);
         jbFijarColor = new JButton("Fijar Color");
             jbFijarColor.setBounds(460,105,120,40);
+        jbEstadisticas = new JButton("Estadísticas");
+            jbEstadisticas.setBounds(190,400,120,40);
+            add(jbEstadisticas);
+            jbEstadisticas.addActionListener(this);
+        jbResetearEstadisticas = new JButton("Resetear estadísticas");
+            jbResetearEstadisticas.setBounds(250,700, 200, 40);
+            jbResetearEstadisticas.addActionListener(this);
+
+
+
+        //TextField
+        jtNombre1 =  new JTextField();
+            jtNombre1.setBounds(600,200,120,30);
+        jtNombre2 = new JTextField();
+            jtNombre2.setBounds(600,300,120,30);
+
 
         //Label
         jlGanador = new JLabel("GANADOR");
@@ -118,6 +135,16 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             jlNombre1.setBounds(450,200, 120, 30);
         jlNombre2 = new JLabel("Nombre Jugador 2");
             jlNombre2.setBounds(450,300,120,30);
+        jlEstadisticas1 = new JLabel("Estadísticas ");
+            jlEstadisticas1.setBounds(40, 600, 300, 30);
+            add(jlEstadisticas1);
+        jlEstadisticas2 = new JLabel("Estadísticas ");
+            jlEstadisticas2.setBounds(40, 700, 300, 30);
+            add(jlEstadisticas2);
+        jlEstadisticasTotales = new JLabel("Estadísticas totales");
+            jlEstadisticasTotales.setBounds(40, 550, 300, 30);
+            add(jlEstadisticasTotales);
+
 
         //Combo
         jcR = new JComboBox();
@@ -136,11 +163,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
                 jcB.addItem(String.valueOf(f));
             }
 
-        //TextField
-        jtNombre1 =  new JTextField();
-            jtNombre1.setBounds(600,200,120,30);
-        jtNombre2 = new JTextField();
-            jtNombre2.setBounds(600,300,120,30);
+        
         
     }
 	   
@@ -150,6 +173,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
     	System.out.println(iTurno);
         if (e.getSource()==jbIniciarPartida) {
                 iniciarPartida();
+                
             }
         if (e.getSource()==jbConfiguracion) {
                 configuracion();
@@ -172,10 +196,24 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
                 c8.setBackground(color1);
                 c9.setBackground(color1);
                 iTurno=0;
-             }   
+             }
+
+        if (e.getSource()==jbEstadisticas) {
+               estadisticas();
+               
+           }
+
+
+        if (e.getSource()==jbResetearEstadisticas) {
+                iPartidasGanadasJ1=0;
+                iPartidasGanadasJ2=0;
+                resetearEstadisticas();
+        }
+
         if (e.getSource()==jbSalirConfiguracion) {
-            salirConfiguracion();
+                salirConfiguracion();
             }
+
         if (iTurno==1) {
             
     		if (e.getSource()==c1) {
@@ -649,7 +687,9 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            JOptionPane.showMessageDialog(null, "Victoria", "Victoria", JOptionPane.INFORMATION_MESSAGE);
+            iPartidasTotales++;
+            
+
         }
 
         if (c4.getText().equals("X")&&c5.getText().equals("X")&&c6.getText().equals("X")) {
@@ -660,7 +700,8 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            JOptionPane.showMessageDialog(null, "Victoria", "Victoria", JOptionPane.INFORMATION_MESSAGE);
+            iPartidasTotales++;
+            
         }
 
         if (c7.getText().equals("X")&&c8.getText().equals("X")&&c9.getText().equals("X")) {
@@ -671,7 +712,8 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            JOptionPane.showMessageDialog(null, "Victoria", "Victoria", JOptionPane.INFORMATION_MESSAGE);
+            iPartidasTotales++;
+            
         }
 
         if (c1.getText().equals("X")&&c4.getText().equals("X")&&c7.getText().equals("X")) {
@@ -682,7 +724,8 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            JOptionPane.showMessageDialog(null, "Victoria", "Victoria", JOptionPane.INFORMATION_MESSAGE);
+            iPartidasTotales++;
+            
         }
 
         if (c2.getText().equals("X")&&c5.getText().equals("X")&&c8.getText().equals("X")) {
@@ -693,7 +736,8 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            JOptionPane.showMessageDialog(null, "Victoria", "Victoria", JOptionPane.INFORMATION_MESSAGE);
+            iPartidasTotales++;
+            
         }
 
         if (c3.getText().equals("X")&&c6.getText().equals("X")&&c9.getText().equals("X")) {
@@ -704,7 +748,8 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            JOptionPane.showMessageDialog(null, "Victoria", "Victoria", JOptionPane.INFORMATION_MESSAGE);
+            iPartidasTotales++;
+            
         }
 
         if (c1.getText().equals("X")&&c5.getText().equals("X")&&c9.getText().equals("X")) {
@@ -715,7 +760,8 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            JOptionPane.showMessageDialog(null, "Victoria", "Victoria", JOptionPane.INFORMATION_MESSAGE);
+            iPartidasTotales++;
+            
         }
 
         if (c3.getText().equals("X")&&c5.getText().equals("X")&&c7.getText().equals("X")) {
@@ -726,7 +772,8 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            JOptionPane.showMessageDialog(null, "Victoria", "Victoria", JOptionPane.INFORMATION_MESSAGE);
+            iPartidasTotales++;
+            
         }
 
         if (c1.getText().equals("O")&&c2.getText().equals("O")&&c3.getText().equals("O")) {
@@ -737,7 +784,8 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            JOptionPane.showMessageDialog(null, "Victoria", "Victoria", JOptionPane.INFORMATION_MESSAGE);
+            iPartidasTotales++;
+            
         }
 
         if (c4.getText().equals("O")&&c5.getText().equals("O")&&c6.getText().equals("O")) {
@@ -748,7 +796,8 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            JOptionPane.showMessageDialog(null, "Victoria", "Victoria", JOptionPane.INFORMATION_MESSAGE);
+            iPartidasTotales++;
+            
         }
 
         if (c7.getText().equals("O")&&c8.getText().equals("O")&&c9.getText().equals("O")) {
@@ -759,7 +808,8 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            JOptionPane.showMessageDialog(null, "Victoria", "Victoria", JOptionPane.INFORMATION_MESSAGE);
+            iPartidasTotales++;
+            
         }
 
         if (c1.getText().equals("O")&&c4.getText().equals("O")&&c7.getText().equals("O")) {
@@ -770,7 +820,9 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            JOptionPane.showMessageDialog(null, "Victoria", "Victoria", JOptionPane.INFORMATION_MESSAGE);
+            iPartidasTotales++;
+            
+            
         }
 
         if (c2.getText().equals("O")&&c5.getText().equals("O")&&c8.getText().equals("O")) {
@@ -781,7 +833,9 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            JOptionPane.showMessageDialog(null, "Victoria", "Victoria", JOptionPane.INFORMATION_MESSAGE);
+            iPartidasTotales++;
+            
+            
         }
 
         if (c3.getText().equals("O")&&c6.getText().equals("O")&&c9.getText().equals("O")) {
@@ -792,7 +846,9 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            JOptionPane.showMessageDialog(null, "Victoria", "Victoria", JOptionPane.INFORMATION_MESSAGE);
+            iPartidasTotales++;
+            
+            
         }
 
         if (c1.getText().equals("O")&&c5.getText().equals("O")&&c9.getText().equals("O")) {
@@ -803,7 +859,9 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            JOptionPane.showMessageDialog(null, "Victoria", "Victoria", JOptionPane.INFORMATION_MESSAGE);
+            iPartidasTotales++;
+            
+            
         }
 
         if (c3.getText().equals("O")&&c5.getText().equals("O")&&c7.getText().equals("O")) {
@@ -814,7 +872,9 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            JOptionPane.showMessageDialog(null, "Victoria", "Victoria", JOptionPane.INFORMATION_MESSAGE);
+            iPartidasTotales++;
+            
+            
         }
 
         if (iTurno>=9&&bVictoria==false) {
@@ -823,7 +883,10 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             jlGanador.setText("EMPATE");
             jlGanador.setVisible(true);
             desactivarBotones();
-            JOptionPane.showMessageDialog(null, "EMPATE", "EMPATE", JOptionPane.INFORMATION_MESSAGE);
+            iPartidasTotales++;
+            iPartidasEmpatadas++;
+            
+            
         }
 
     }
@@ -855,6 +918,35 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             c8.setEnabled(true);
             c9.setEnabled(true);
         
+    }
+
+    private void estadisticas(){
+        iTurno=0;
+        setSize(500,800);
+        if (bVictoria=true&&jlGanador.getText().equals("Ganador " + jtNombre1.getText())) {
+            iPartidasGanadasJ1++;
+        }
+
+        if (bVictoria=true&&jlGanador.getText().equals("Ganador " + jtNombre2.getText())) {
+            iPartidasGanadasJ2++;
+        }
+
+        jlEstadisticas1.setText("Partidas ganadas " + jtNombre1.getText() + ": " + iPartidasGanadasJ1);
+        jlEstadisticas2.setText("Partidas ganadas " + jtNombre2.getText() + ": " + iPartidasGanadasJ2);
+        jlEstadisticas1.setVisible(true);
+        jlEstadisticas2.setVisible(true);
+        jlEstadisticasTotales.setText("Partidas totales: " + iPartidasTotales);
+        add(jbResetearEstadisticas);
+    }
+
+    private void resetearEstadisticas(){
+        iTurno=0;
+        iPartidasGanadasJ1=0;
+        iPartidasGanadasJ2=0;
+        jlEstadisticas1.setText("Partidas ganadas " + jtNombre1.getText() + ": " + iPartidasGanadasJ1);
+        jlEstadisticas2.setText("Partidas ganadas " + jtNombre2.getText() + ": " + iPartidasGanadasJ2);
+        jlEstadisticas1.setVisible(true);
+        jlEstadisticas2.setVisible(true);
     }
 	
 }
