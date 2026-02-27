@@ -10,6 +10,7 @@
 		Pablo Pérez
 
 */
+/* cambios */
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -20,7 +21,7 @@ import java.awt.event.*;
 import javax.swing.JOptionPane;
 import java.awt.Color;
 import javax.swing.ImageIcon;
-//qwerqwerqwer//
+
 class TresEnRaya extends JFrame implements ActionListener, ItemListener{
 
 	//Declaraciones
