@@ -27,12 +27,12 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
 	//Declaraciones
 
 	JButton c1, c2, c3, c4, c5, c6, c7, c8, c9, jbIniciarPartida, jbConfiguracion, jbFijarColor, jbSalirConfiguracion, jbEstadisticas, jbResetearEstadisticas;
-    JLabel jlGanador, jlTurno, jlR, jlG, jlB, jlNombre1, jlNombre2, jlEstadisticas1, jlEstadisticas2, jlEstadisticasTotales;
+    JLabel jlGanador, jlTurno, jlR, jlG, jlB, jlNombre1, jlNombre2, jlEstadisticas1, jlEstadisticas2, jlEstadisticasEmpates, jlEstadisticasTotales;
     JComboBox jcR,jcG,jcB;
     JTextField jtNombre1,jtNombre2;
     ImageIcon xIcon=new ImageIcon(".\\Imagenes\\"), yIcon=new ImageIcon(".\\Imagenes\\");
 
-	int iTurno=1, iPartidasTotales, iPartidasEmpatadas;
+	int iTurno=1, iPartidasTotales,iPartidasEmpatadas;
     boolean bVictoria;
     int iPartidasGanadasJ1=0, iPartidasGanadasJ2=0;
     
@@ -140,8 +140,11 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             jlEstadisticas1.setBounds(40, 600, 300, 30);
             add(jlEstadisticas1);
         jlEstadisticas2 = new JLabel("Estadísticas ");
-            jlEstadisticas2.setBounds(40, 700, 300, 30);
+            jlEstadisticas2.setBounds(40, 650, 300, 30);
             add(jlEstadisticas2);
+        jlEstadisticasEmpates = new JLabel();
+            jlEstadisticasEmpates.setBounds(40, 700, 300, 30);
+            add(jlEstadisticasEmpates);
         jlEstadisticasTotales = new JLabel("Estadísticas totales");
             jlEstadisticasTotales.setBounds(40, 550, 300, 30);
             add(jlEstadisticasTotales);
@@ -208,6 +211,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
         if (e.getSource()==jbResetearEstadisticas) {
                 iPartidasGanadasJ1=0;
                 iPartidasGanadasJ2=0;
+                iPartidasTotales=0;
                 resetearEstadisticas();
         }
 
@@ -688,7 +692,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            iPartidasTotales++;
+            
             
 
         }
@@ -701,7 +705,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            iPartidasTotales++;
+            
             
         }
 
@@ -713,7 +717,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            iPartidasTotales++;
+            
             
         }
 
@@ -725,7 +729,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            iPartidasTotales++;
+            
             
         }
 
@@ -737,7 +741,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            iPartidasTotales++;
+            
             
         }
 
@@ -749,7 +753,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            iPartidasTotales++;
+            
             
         }
 
@@ -761,7 +765,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            iPartidasTotales++;
+            
             
         }
 
@@ -773,7 +777,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            iPartidasTotales++;
+            
             
         }
 
@@ -785,7 +789,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            iPartidasTotales++;
+            
             
         }
 
@@ -797,7 +801,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            iPartidasTotales++;
+            
             
         }
 
@@ -809,7 +813,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            iPartidasTotales++;
+            
             
         }
 
@@ -821,7 +825,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            iPartidasTotales++;
+            
             
             
         }
@@ -834,7 +838,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            iPartidasTotales++;
+            
             
             
         }
@@ -847,7 +851,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            iPartidasTotales++;
+            
             
             
         }
@@ -860,7 +864,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            iPartidasTotales++;
+            
             
             
         }
@@ -873,7 +877,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             bVictoria=true;
             desactivarBotones();
             jlTurno.setText("");
-            iPartidasTotales++;
+            
             
             
         }
@@ -884,7 +888,6 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             jlGanador.setText("EMPATE");
             jlGanador.setVisible(true);
             desactivarBotones();
-            iPartidasTotales++;
             iPartidasEmpatadas++;
             
             
@@ -932,10 +935,19 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
             iPartidasGanadasJ2++;
         }
 
+        if (iTurno>=9&&bVictoria==false) {
+            iPartidasEmpatadas++;
+             
+        }
+
+        iPartidasTotales=iPartidasEmpatadas+iPartidasGanadasJ1+iPartidasGanadasJ2; 
+
         jlEstadisticas1.setText("Partidas ganadas " + jtNombre1.getText() + ": " + iPartidasGanadasJ1);
         jlEstadisticas2.setText("Partidas ganadas " + jtNombre2.getText() + ": " + iPartidasGanadasJ2);
         jlEstadisticas1.setVisible(true);
         jlEstadisticas2.setVisible(true);
+        jlEstadisticasEmpates.setVisible(true);
+        jlEstadisticasEmpates.setText("Partidas empatadas: " + iPartidasEmpatadas);
         jlEstadisticasTotales.setText("Partidas totales: " + iPartidasTotales);
         add(jbResetearEstadisticas);
     }
@@ -944,8 +956,11 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
         iTurno=0;
         iPartidasGanadasJ1=0;
         iPartidasGanadasJ2=0;
+        iPartidasEmpatadas=0;
         jlEstadisticas1.setText("Partidas ganadas " + jtNombre1.getText() + ": " + iPartidasGanadasJ1);
         jlEstadisticas2.setText("Partidas ganadas " + jtNombre2.getText() + ": " + iPartidasGanadasJ2);
+        jlEstadisticasEmpates.setText("Partidas empatadas: " + iPartidasEmpatadas);
+        jlEstadisticasTotales.setText("Partidas totales: " + iPartidasTotales);
         jlEstadisticas1.setVisible(true);
         jlEstadisticas2.setVisible(true);
     }
