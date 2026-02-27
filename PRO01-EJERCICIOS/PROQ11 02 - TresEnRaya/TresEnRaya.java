@@ -26,7 +26,7 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
 
 	//Declaraciones
 
-	JButton c1, c2, c3, c4, c5, c6, c7, c8, c9, jbIniciarPartida, jbConfiguracion, jbFijarColor, jbSalirConfiguracion, jbEstadisticas, jbResetearEstadisticas;
+	JButton c1, c2, c3, c4, c5, c6, c7, c8, c9, jbIniciarPartida, jbConfiguracion, jbFijarColor, jbSalirConfiguracion, jbEstadisticas, jbResetearEstadisticas, jbSalirEstadisticas;
     JLabel jlGanador, jlTurno, jlR, jlG, jlB, jlNombre1, jlNombre2, jlEstadisticas1, jlEstadisticas2, jlEstadisticasEmpates, jlEstadisticasTotales;
     JComboBox jcR,jcG,jcB;
     JTextField jtNombre1,jtNombre2;
@@ -108,6 +108,9 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
         jbResetearEstadisticas = new JButton("Resetear estadísticas");
             jbResetearEstadisticas.setBounds(250,700, 200, 40);
             jbResetearEstadisticas.addActionListener(this);
+        jbSalirEstadisticas = new JButton("Salir");
+            jbSalirEstadisticas.setBounds(340, 500, 120, 40);
+            jbSalirEstadisticas.addActionListener(this);
 
 
 
@@ -218,6 +221,11 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
         if (e.getSource()==jbSalirConfiguracion) {
                 salirConfiguracion();
             }
+
+        if (e.getSource()==jbSalirEstadisticas) {
+                iTurno=0;
+                setSize(500,500);
+            }    
 
         if (iTurno==1) {
             
@@ -950,6 +958,8 @@ class TresEnRaya extends JFrame implements ActionListener, ItemListener{
         jlEstadisticasEmpates.setText("Partidas empatadas: " + iPartidasEmpatadas);
         jlEstadisticasTotales.setText("Partidas totales: " + iPartidasTotales);
         add(jbResetearEstadisticas);
+        add(jbSalirEstadisticas);
+        jbSalirEstadisticas.setVisible(true);
     }
 
     private void resetearEstadisticas(){
