@@ -1,0 +1,117 @@
+
+
+Version:	3.50
+CmdLine:	C:\Users\ciclos.pablo\Programacion\PRO01-EJERCICIOS\PROQ11 02 - TresEnRaya\TresEnRaya.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\ciclos.pablo\Programacion\PRO01-EJERCICIOS\PROQ11 02 - TresEnRaya\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	1.008.000
+Java max ver:	
+Substitute:	JAVA_HOME = 
+Substitute:	PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\ciclos.pablo\AppData\Local\Microsoft\WindowsApps;C:\Users\ciclos.pablo\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\ciclos.pablo\AppData\Local\Microsoft\WinGet\Packages\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\edit-1.2.1-x86_64-windows;C:\Program Files (x86)\EShare\;C:\Program Files\Java\jdk-24\bin
+JRE paths:	;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\ciclos.pablo\AppData\Local\Microsoft\WindowsApps;C:\Users\ciclos.pablo\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\ciclos.pablo\AppData\Local\Microsoft\WinGet\Packages\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\edit-1.2.1-x86_64-windows;C:\Program Files (x86)\EShare\;C:\Program Files\Java\jdk-24\bin
+Check launcher:	C:\Program Files\Common Files\Oracle\Java\javapath\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\system32\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\System32\Wbem\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\System32\WindowsPowerShell\v1.0\bin\javaw.exe (not found)
+Check launcher:	C:\WINDOWS\System32\OpenSSH\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Git\cmd\bin\javaw.exe (not found)
+Check launcher:	C:\Users\ciclos.pablo\AppData\Local\Microsoft\WindowsApps\bin\javaw.exe (not found)
+Check launcher:	C:\Users\ciclos.pablo\AppData\Local\JetBrains\Toolbox\scripts\bin\javaw.exe (not found)
+Check launcher:	C:\Users\ciclos.pablo\AppData\Local\Microsoft\WinGet\Packages\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\edit-1.2.1-x86_64-windows\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files (x86)\EShare\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe (OK)
+Version string: 1.024.000_002 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe
+Launcher args:	-jar "C:\Users\ciclos.pablo\Programacion\PRO01-EJERCICIOS\PROQ11 02 - TresEnRaya\TresEnRaya.exe"
+Args length:	96/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\ciclos.pablo\Programacion\PRO01-EJERCICIOS\PROQ11 02 - TresEnRaya\TresEnRaya.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\ciclos.pablo\Programacion\PRO01-EJERCICIOS\PROQ11 02 - TresEnRaya\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	1.008.000
+Java max ver:	
+JRE paths:	C:\Program Files\Common Files\Oracle\Java\javapath\javac.exe
+Check launcher:	C:\Program Files\Common Files\Oracle\Java\javapath\javac.exe\bin\javaw.exe (not found)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+32-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\24.0.2
+Version string: 1.024.000_002 / 64-Bit (OK)
+Check launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe (OK)
+Match:		1.024.000_002
+Runtime used:	1.024.000_002 (64-bit)
+Launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe
+Launcher args:	-jar "C:\Users\ciclos.pablo\Programacion\PRO01-EJERCICIOS\PROQ11 02 - TresEnRaya\TresEnRaya.exe"
+Args length:	96/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\ciclos.pablo\Programacion\PRO01-EJERCICIOS\PROQ11 02 - TresEnRaya\TresEnRaya.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\ciclos.pablo\Programacion\PRO01-EJERCICIOS\PROQ11 02 - TresEnRaya\.
+Requires JDK:	No
+Requires 64-Bit: Yes
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Common Files\Oracle\Java\javapath\javac.exe
+Check launcher:	C:\Program Files\Common Files\Oracle\Java\javapath\javac.exe\bin\javaw.exe (not found)
+Error msg:	This application requires a Java Runtime Environment.
+
+
+Version:	3.50
+CmdLine:	C:\Users\ciclos.pablo\Programacion\PRO01-EJERCICIOS\PROQ11 02 - TresEnRaya\TresEnRaya.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\ciclos.pablo\Programacion\PRO01-EJERCICIOS\PROQ11 02 - TresEnRaya\.
+Requires JDK:	No
+Requires 64-Bit: Yes
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Common Files\Oracle\Java\javapath\javac.exe
+Check launcher:	C:\Program Files\Common Files\Oracle\Java\javapath\javac.exe\bin\javaw.exe (not found)
+Error msg:	This application requires a Java Runtime Environment.
+
+
+Version:	3.50
+CmdLine:	C:\Users\ciclos.pablo\Programacion\PRO01-EJERCICIOS\PROQ11 02 - TresEnRaya\TresEnRaya.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\ciclos.pablo\Programacion\PRO01-EJERCICIOS\PROQ11 02 - TresEnRaya\.
+Requires JDK:	No
+Requires 64-Bit: Yes
+Java min ver:	1.025.000_001
+Java max ver:	
+JRE paths:	C:\Program Files\Common Files\Oracle\Java\javapath\javac.exe
+Check launcher:	C:\Program Files\Common Files\Oracle\Java\javapath\javac.exe\bin\javaw.exe (not found)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\24.0.2
+Version string: 1.024.000_002 / 64-Bit (Ignore)
+Ignore:		1.024.000_002
+Check:		SOFTWARE\JavaSoft\JDK\25.0.1
+Version string: 1.025.000_001 / 64-Bit (OK)
+Check launcher:	C:\Program Files\Java\jdk-25\bin\javaw.exe (OK)
+Match:		1.025.000_001
+Runtime used:	1.025.000_001 (64-bit)
+Launcher:	C:\Program Files\Java\jdk-25\bin\javaw.exe
+Launcher args:	-jar "C:\Users\ciclos.pablo\Programacion\PRO01-EJERCICIOS\PROQ11 02 - TresEnRaya\TresEnRaya.exe"
+Args length:	96/32768 chars
+Exit code:	0
