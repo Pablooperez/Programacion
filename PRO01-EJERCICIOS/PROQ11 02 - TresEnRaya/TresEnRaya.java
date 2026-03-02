@@ -10,7 +10,7 @@
 		Pablo Pérez
 
 */
-/* cambios LUNES */
+/* cambios */
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
