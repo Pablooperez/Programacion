@@ -38,6 +38,9 @@ class PRO08PPM_Ejemplo01 {
 			System.out.println(" -> Suspendido");
 		}
 		System.out.println("\n***Fin de programa***");		
+		System.out.println((nota1 == 10) ? "Has sacado un 10" : "No has sacado un 10");
+		System.out.println((nota2 == 5) ? "Has sacado un 5" : "No has sacado un 5");
+
 
 	}//Main
 }//Class
