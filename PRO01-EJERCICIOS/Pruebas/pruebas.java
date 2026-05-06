@@ -1,20 +1,22 @@
+/*
+    Para crear un boton, label, textarea... Primero debemos crear el objeto, ubicarlo en una posición del formulario, añadirlo y hacerlo visible. 
+    Si queremos que respondo a acciones, lo añadimos a addActionListener.
 
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JTextField;
+    DNI -----------------
+    NIF -----------------
+    CALCULAR SALIR
+*/
+
+import javax.swing.*;
 import java.awt.event.*;
-import javax.swing.JOptionPane;
-import java.awt.Color;
-
 
 class pruebas extends JFrame implements ActionListener {
     
     //Declaraciones
-
-    JButton jbuton1, jbuton2, jbuton3, jbuton4, jbuton5, jbuton6;
-    JLabel jlabel1, jlabel2, jlabel3, jlabel4, jlabel5, jlabel6;
+    String letras = "TRWAGMYFPDXBNJZSQVHLCKE";
+    JTextField jtfDni, jtfNif;
+    JLabel jlDni, jlNif;
+    JButton jbCalcular, jbSalir;
 
     //Constructores
     public pruebas(){
@@ -22,35 +24,54 @@ class pruebas extends JFrame implements ActionListener {
     }
     //Métodos
     private void crear(){
-        //Frame
+        setTitle("CALCULADORA NIF");
         setLayout(null);
-        setTitle("PRUEBAS");
 
-        //Button
+        jlDni = new JLabel("DNI");
+        jlDni.setBounds(25,25,50,50);
+        add(jlDni);
 
-        jbuton1 = new JButton();
-        jbuton1.setBounds(50,50,50,50);
-        add(jbuton1);
-        jbuton1.setVisible(true);
-        jbuton1.addActionListener(this);
+        jlNif = new JLabel("NIF");
+        jlNif.setBounds(25,100,50,50);
+        add(jlNif);
 
-        jbuton2 = new JButton();
-        jbuton2.setBounds(200,200,50,50);
-        add(jbuton2);
-        jbuton2.setVisible(true);
-        jbuton2.addActionListener(this);
+        jtfDni = new JTextField();
+        jtfDni.setBounds(70,37,100,25);
+        add(jtfDni);
+
+        jtfNif = new JTextField();
+        jtfNif.setBounds(70,112,100,25);
+        add(jtfNif);
+
+        jbCalcular = new JButton("CALCULAR");
+        jbCalcular.setBounds(30,200,100,25);
+        add(jbCalcular);
+        jbCalcular.addActionListener(this);
+
+        jbSalir = new JButton("SALIR");
+        jbSalir.setBounds(150,200,100,25);
+        add(jbSalir);
+        jbSalir.addActionListener(this);
+
     }
+
+    public void calcular(){
+        int dni = Integer.parseInt(jtfDni.getText());
+        int ubicacion = dni%23;
+        jtfNif.setText(jtfDni.getText()+letras.charAt(ubicacion));
+    
+    }
+
     //Interfaces
+
     public void actionPerformed(ActionEvent e){
-        if (e.getSource()==jbuton1) {
-            jbuton1.setBounds(100,100,100,100);
-            jbuton1.setBackground(Color.WHITE);
+        if (e.getSource()==jbSalir) {
+            System.exit(0);
         }
 
-        if (e.getSource()==jbuton2) {
-            jbuton2.setBounds(300,300,500,500);
-            //Color color1 = new Color(BLACK);
-            jbuton2.setBackground(Color.BLACK);
+        if (e.getSource()==jbCalcular) {
+            calcular();
+            
         }
     }
 
